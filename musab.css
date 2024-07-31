@@ -1,0 +1,292 @@
+
+/* font-family: "Dancing Script", cursive; */
+/* font-family: "Sacramento", cursive; */
+/* font-family: "splash", cursive; */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.cursor{
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    margin-left: -20px;
+    margin-top: -20px;
+    border-radius: 50%;
+    background-color: darkcyan;
+    backdrop-filter: blur(10px);
+    transition: transform .2s ease;
+    transform-origin: center center;
+    pointer-events: none;
+    z-index: 1000;
+}
+header{
+    background-color: black;
+    width: 100%;
+    height: 520vh;
+}
+#fadeintop{
+padding: 30px;
+padding-inline-start: 5%;
+}
+#fadeintop img{
+    border-radius: 300px;
+}
+
+
+nav { 
+    background-image: linear-gradient(to right,rgb(2, 2, 2),rgb(5, 5, 5)); 
+
+}
+
+nav ul {
+    justify-content: flex-end;
+    display: flex;
+    list-style: none;
+     align-items: center;
+     margin-right: 8%;
+}
+nav li{
+    height: 50px;
+    margin-top: -5%;
+}
+nav a{
+    text-decoration: none;
+    display: flex;
+    height: 100%;
+    padding: 0 13px;
+    color: aliceblue;
+}
+.slidebar{
+    position:fixed;
+    right:0;
+    height: 100vh;
+    width: 360px;
+    z-index:999;
+    background-color: black;
+    box-shadow: 10px 15px rgb(19, 18, 18);
+    backdrop-filter: blur(10px);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.slidebar li{
+    width: 100%;
+    padding: 20px;
+}
+.slidebar a{
+    width: 100%;
+}
+
+.slidebar li a:hover{
+    background-image: linear-gradient(to right,rgb(2, 2, 2),rgb(19, 18, 18));
+}
+#set{
+    display: none;
+}
+
+@media (max-width:800px){
+ .hideonmobile{
+    display:none;
+ }
+ #set{
+    display:block;
+ }
+}
+@media (max-width:400px){
+ .slidebar{
+    width: 100%;
+ }
+}
+
+.mehroon{
+    background-image: linear-gradient(to bottom,black,rgb(22, 19, 19));
+    color: aliceblue;
+    text-align: center;
+    margin-top: 10%;
+} 
+
+.mehroon h1{
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 0;
+}
+.mehroon p{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0 5rem 0 5rem;
+}
+.mehroon svg{
+    display: block;
+}
+.sameen-img{
+    text-align: center;
+}
+.sameen-img img{
+    border-radius: 100%;
+    border-color:solid white;
+    box-shadow: 20px 10px 20px 10px rgb(19, 18, 18);
+    margin-top: 8%;
+}
+.top-home{
+    margin-top: -9%;
+}
+.top-home h2{
+     font-family: "alex brush",cursive;
+     font-size: 70px;
+     margin-top: 13%;
+     padding-inline-start: 50px;
+     text-align: center;
+}
+ h2 span {
+    animation: animate 3s linear infinite;
+    animation-delay: calc(0.1s * var(--i));
+}
+@keyframes animate{
+    0%{
+        color:rgb(145, 138, 138);
+        filter:blur(2px) hue-rotate(0deg);
+        text-shadow: 0 0 10px lightblue,
+        0 0 20px lightseagreen,
+        0 0 40px lightseagreen,
+        0 0 80px lightseagreen,
+        0 0 120px lightseagreen,
+        0 0 200px lightseagreen,
+        0 0 300px lightseagreen,
+        0 0 400px lightseagreen,
+    }
+    30%,70%{
+        color:rgb(145, 138, 138);
+        filter:blur(2px) hue-rotate(360deg);
+        text-shadow: 0 0 10px lightblue,
+        0 0 20px lightseagreen,
+        0 0 40px lightseagreen,
+        0 0 80px lightseagreen,
+        0 0 120px lightseagreen,
+        0 0 200px lightseagreen;
+    }
+    100%{
+        color: transparent;
+        box-shadow:none;
+        filter:blur(2px) hue-rotate(0deg);
+    }
+}
+.carousel{
+    height: 500px;
+}
+.carousel .carousel-item{
+    width: 400px;
+}
+#portfolio{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: aliceblue;
+    margin-top: 5%;
+    font-size: 100px;
+    font-family: "alex brush",cursive;
+}
+.title{
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   align-items: center;
+   column-gap: 1.6rem;
+}
+.title::before, .title::after{
+   content: "";
+   height: 2px;
+   display: block;
+   background-color: white;
+}
+.img-aside{
+    /* background-color: lawngreen; */
+    display: flex;
+    justify-content: space-between;
+    padding: 70px;
+    margin-top: 10%;
+}
+.img-aside hr{
+    width: 100px;
+}
+.img-aside img{
+    width: 40%;
+    margin-right: 2%;
+}
+.best-text p{
+ margin-top: 30px;
+}
+.img-aside h1{
+color: aliceblue;
+margin-top: 23%;
+font-size: 100px;
+font-family: "alex brush",cursive;
+}
+.img-aside p{
+    margin-inline-start: 140px;
+    margin-top: -1.1%;
+font-size: 13px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+color: aliceblue;
+}
+
+footer{
+    min-height:60vh;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    background-image: linear-gradient(to top,black,rgb(22, 19, 19));
+    padding:20px 30px;
+    margin-top: 10%;
+}
+.footer-item img{
+    border-radius: 50px;
+    height:50px;
+    width:50px;
+    margin-top: 2%;
+}
+.footer-item p{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(190, 188, 188);
+}
+.footer-item h1{
+    font-size: 50px;
+    color: darkcyan;
+    font-family: "alex brush",cursive;
+}
+.footer-item span{
+    color:rgb(190, 188, 188) ;
+    font-size:20px;
+}
+.footer-item h3{
+    color:rgb(190, 188, 188) ;
+    font-size:15px;
+}
+
+
+
+
+
+
+
+
+
+/* -webkit-animation: fadeintop 1.2s both; */
+
+/* To create a fade-down animation in CSS, you can utilize the opacity property along with the transform property to move the element downwards. Here's a simplified example of how you can achieve this: */
+/* @keyframes fadeintop {
+    0%{
+         opacity:0;
+         transform: translateY(-80px);
+    }
+
+    100%{
+        opacity:1;
+        transform:translateY(0);
+    }
+} */
+
+
